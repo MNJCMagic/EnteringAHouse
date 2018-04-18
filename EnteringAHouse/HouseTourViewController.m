@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIBarButtonItem *homeButton = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
+    self.navigationItem.rightBarButtonItem = homeButton;
+}
+
+-(void)goHome {
+    HouseTourViewController *homeView = [self.storyboard instantiateViewControllerWithIdentifier:@"Home"];
+    [self.navigationController pushViewController:homeView animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

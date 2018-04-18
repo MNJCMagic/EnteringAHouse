@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--House Tour View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HouseTourViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" title="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HouseTourViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,6 +28,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFq-I7-V58">
                                 <rect key="frame" x="132" y="483" width="111" height="30"/>
                                 <state key="normal" title="Coat Room"/>
+                                <connections>
+                                    <segue destination="cHm-Di-kxe" kind="show" id="aTF-Xz-5WD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,14 +85,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONK-Kz-PPW">
                                 <rect key="frame" x="132" y="483" width="111" height="30"/>
                                 <state key="normal" title="Library"/>
+                                <connections>
+                                    <segue destination="26r-iQ-18b" kind="show" id="zoO-AR-ZOr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mL5-me-W14">
                                 <rect key="frame" x="156" y="601" width="63" height="30"/>
                                 <state key="normal" title="Stairs Up"/>
+                                <connections>
+                                    <segue destination="ptl-A5-Zvz" kind="show" id="BZW-ad-KmK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p8-Zr-Aq4">
                                 <rect key="frame" x="144" y="542" width="87" height="30"/>
                                 <state key="normal" title="Dining Room"/>
+                                <connections>
+                                    <segue destination="5UC-eh-hsE" kind="show" id="gzR-kQ-u2o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -130,6 +142,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWm-Nc-Rap">
                                 <rect key="frame" x="132" y="483" width="111" height="30"/>
                                 <state key="normal" title="Secret Passage"/>
+                                <connections>
+                                    <segue destination="ubw-iP-paT" kind="show" id="LqI-He-TV0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -166,6 +181,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH9-8W-VDg">
                                 <rect key="frame" x="132" y="483" width="111" height="30"/>
                                 <state key="normal" title="Kitchen"/>
+                                <connections>
+                                    <segue destination="PAL-Z1-KWn" kind="show" id="gdQ-hM-Hi1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -202,10 +220,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcj-U0-3q6">
                                 <rect key="frame" x="132" y="483" width="111" height="30"/>
                                 <state key="normal" title="Bedroom"/>
+                                <connections>
+                                    <segue destination="2cq-Tj-2L0" kind="show" id="yc2-lY-D89"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmo-xk-Dxx">
                                 <rect key="frame" x="154" y="542" width="67" height="30"/>
                                 <state key="normal" title="Bathroom"/>
+                                <connections>
+                                    <segue destination="djk-CK-Wa3" kind="show" id="2Vf-tM-Paf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -244,6 +268,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXP-NZ-tbB">
                                 <rect key="frame" x="132" y="483" width="111" height="30"/>
                                 <state key="normal" title="Back Porch"/>
+                                <connections>
+                                    <segue destination="VIS-IY-QJm" kind="show" id="MGT-gM-5SV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -280,14 +307,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXt-kG-Sxs">
                                 <rect key="frame" x="132" y="483" width="111" height="30"/>
                                 <state key="normal" title="Dungeon"/>
+                                <connections>
+                                    <segue destination="FXv-hh-2jy" kind="show" id="IX8-d8-k03"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFC-XZ-ImG">
                                 <rect key="frame" x="132" y="601" width="112" height="30"/>
                                 <state key="normal" title="Mysterious Lake"/>
+                                <connections>
+                                    <segue destination="9fI-6M-ycf" kind="show" id="hwn-Bn-xHl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kX-aK-Guf">
                                 <rect key="frame" x="150" y="542" width="75" height="30"/>
                                 <state key="normal" title="Laboratory"/>
+                                <connections>
+                                    <segue destination="WHR-uU-osh" kind="show" id="EQt-QP-hlA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -357,6 +393,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPP-0d-VS0">
                                 <rect key="frame" x="132" y="483" width="111" height="30"/>
                                 <state key="normal" title="Generator"/>
+                                <connections>
+                                    <segue destination="w9A-Hj-X6N" kind="show" id="zjP-5V-o4X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -393,6 +432,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUC-HU-mGG">
                                 <rect key="frame" x="132" y="483" width="111" height="30"/>
                                 <state key="normal" title="Cursed Chalice"/>
+                                <connections>
+                                    <segue destination="N66-ba-8I3" kind="show" id="bhW-ae-moX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
